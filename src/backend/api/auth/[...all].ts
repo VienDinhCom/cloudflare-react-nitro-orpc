@@ -4,7 +4,7 @@ import { createDb } from "@/backend/database";
 import { createAuth } from "@/backend/lib/auth";
 
 export default defineEventHandler((event) => {
-  const env = (event.context as any).cloudflare?.env as { DB: D1Database } | undefined;
+  const env = (event as any).context.cloudflare?.env;
   const d1 = env?.DB;
 
   if (!d1) {
@@ -12,7 +12,7 @@ export default defineEventHandler((event) => {
   }
 
   const db = createDb(d1 as D1Database);
-  const auth = createAuth(db);
+  const auth = createAuth(db, env);
 
   return auth.handler(event.req as unknown as Request);
 });

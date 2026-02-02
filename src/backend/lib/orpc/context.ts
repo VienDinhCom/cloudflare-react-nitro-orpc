@@ -11,11 +11,11 @@ export async function createORPCContext(event: H3Event) {
     return value;
   };
 
-  const env = (event.context as any).cloudflare?.env as { DB: D1Database } | undefined;
+  const env = (event as any).context.cloudflare?.env
   const d1 = check(env?.DB, "Missing D1 database binding");
 
   const db = createDb(d1 as D1Database);
-  const auth = createAuth(db);
+  const auth = createAuth(db, env);
 
   return { event, db, auth };
 }

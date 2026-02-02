@@ -5,8 +5,11 @@ import { drizzleAdapter } from "better-auth/adapters/drizzle";
 
 import type * as schema from "@/backend/database/schema";
 
-export function createAuth(db: DrizzleD1Database<typeof schema>) {
+
+export function createAuth(db: DrizzleD1Database<typeof schema>, env: any) {
   return betterAuth({
+    baseURL: env.BETTER_AUTH_URL,
+    secret: env.BETTER_AUTH_SECRET,
     database: drizzleAdapter(db, {
       provider: "sqlite",
     }),

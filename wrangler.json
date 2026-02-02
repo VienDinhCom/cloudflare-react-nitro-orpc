@@ -8,8 +8,12 @@
     {
       "binding": "DB",
       "database_name": "tanstack-react-nitro-orpc",
-      "database_id": "f1559036-f527-46ec-84ff-0b4e933b991e",
+      "database_id": "270138f5-6c7a-468e-84d2-b8aa33ce301d",
       "migrations_dir": "src/backend/database/migrations"
     }
-  ]
+  ],
+  "vars": {
+    "BETTER_AUTH_SECRET": "Z3qKa4lPPNh1mP1rpoNW6kzOI412nUzYwW2a",
+    "BETTER_AUTH_URL": "https://tanstack-react-nitro-orpc.dthvien.workers.dev"
+  }
 }
