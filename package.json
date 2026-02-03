@@ -57,8 +57,6 @@
     "wrangler": "^4.61.1"
   },
   "tasks": {
-    "migrate": "wrangler d1 migrations apply tanstack-react-nitro-orpc $1",
-    "types": "wrangler types src/backend/lib/types/cloudflare.d.ts",
     "dev": [
       "esmate task types",
       "esmate task migrate --local",
@@ -88,6 +86,8 @@
       "esmate fmt --check",
       "esmate lint"
     ],
-    "test": "vitest run"
+    "test": "vitest run",
+    "types": "wrangler types src/backend/lib/types/cloudflare.d.ts",
+    "migrate": "wrangler d1 migrations apply tanstack-react-nitro-orpc $1"
   }
 }
