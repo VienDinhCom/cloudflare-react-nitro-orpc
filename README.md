@@ -28,6 +28,7 @@ enhances your development workflow.
 ## 🎮 Demonstration
 
 Explore fully functional demo apps built with this template to see the stack in action here:
+
 https://tanstack-react-nitro-orpc.dthvien.workers.dev/
 
 ### ☑️ Todo App
