@@ -9,12 +9,9 @@ import {
   LayoutTemplate,
   MessageSquare,
   Server,
-  Sparkles,
   Zap,
 } from "@esmate/shadcn/pkgs/lucide-react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-
-import logo from "@/frontend/assets/images/logo.svg";
 
 export const Route = createFileRoute("/")({
   component: App,
@@ -27,14 +24,13 @@ function App() {
       <section className="relative overflow-hidden bg-linear-to-b from-muted/50 to-background pt-10 pb-10 lg:pt-20 lg:pb-20">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(45%_45%_at_50%_50%,var(--color-primary)_0%,transparent_100%)] opacity-5" />
         <div className="mx-auto max-w-5xl px-4 text-center">
-          <div className="mb-8 flex justify-center">
-            <img src={logo} alt="ESMate logo" className="h-40 w-40 animate-pulse" />
+          <div>
+            <Button asChild size="lg" className="mb-6 w-full gap-2 bg-orange-600 font-bold sm:w-auto">
+              <a href="https://viendinh.vercel.app/" target="_blank" rel="noopener noreferrer">
+                Hire Me as Your Full-Stack Developer
+              </a>
+            </Button>
           </div>
-
-          <Badge variant="secondary" className="mb-6 px-4 py-1.5 text-sm">
-            <Sparkles className="mr-2 h-4 w-4 text-primary" />
-            The Modern MERN Stack Replacement
-          </Badge>
 
           <h1 className="mb-6 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <span className="block">Frontend Artistry.</span>
@@ -44,19 +40,17 @@ function App() {
           </h1>
 
           <p className="mx-auto mb-10 max-w-2xl text-xl text-muted-foreground">
-            Orchestrated by{" "}
-            <strong>
-              <a
-                className="hover:text-primary"
-                href="https://github.com/VienDinhCom/esmate"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ESMate
-              </a>
-            </strong>
-            . A complete replacement for the MERN stack—bringing you React, Nitro, and Type-Safe APIs in perfect
-            harmony.
+            A modern <strong>MERN</strong> stack replacement designed for ultra-cheap, zero-ops deployment on
+            Cloudflare—powered by{" "}
+            <a
+              className="hover:text-primary"
+              href="https://github.com/VienDinhCom/esmate"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>ESMate</strong>
+            </a>
+            , TanStack, React, Nitro, oRPC, etc.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
