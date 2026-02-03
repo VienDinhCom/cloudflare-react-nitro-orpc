@@ -9,9 +9,9 @@ export function createEnv(event: H3Event) {
 
   return z
     .object({
-      CLOUDFLARE_D1: z.any(),
       AUTH_SECRET: z.string(),
       BASE_URL: z.url().default(url.origin),
+      CLOUDFLARE_D1: z.any(),
     })
     .readonly()
     .parse(import.meta.env.MODE === "production" ? productionEnv : developmentEnv);
