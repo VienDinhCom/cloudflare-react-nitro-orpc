@@ -33,7 +33,7 @@ function App() {
 
           <Badge variant="secondary" className="mb-6 px-4 py-1.5 text-sm">
             <Sparkles className="mr-2 h-4 w-4 text-primary" />
-            The Future of Full-Stack React
+            The Modern MERN Stack Replacement
           </Badge>
 
           <h1 className="mb-6 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
@@ -44,18 +44,29 @@ function App() {
           </h1>
 
           <p className="mx-auto mb-10 max-w-2xl text-xl text-muted-foreground">
-            Orchestrated by <strong>ESMate</strong>. A complete replacement for the MERN stack—bringing you React,
-            Nitro, and Type-Safe APIs in perfect harmony.
+            Orchestrated by{" "}
+            <strong>
+              <a
+                className="hover:text-primary"
+                href="https://github.com/VienDinhCom/esmate"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ESMate
+              </a>
+            </strong>
+            . A complete replacement for the MERN stack—bringing you React, Nitro, and Type-Safe APIs in perfect
+            harmony.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
             <Button size="lg" className="h-12 px-8 text-base" asChild>
               <a
-                href="https://github.com/VienDinhCom/esmate/tree/main/templates/react-nitro"
+                href="https://github.com/VienDinhCom/tanstack-react-nitro-orpc"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Get Started
+                View on GitHub
                 <ExternalLink className="ml-2 h-4 w-4" />
               </a>
             </Button>
