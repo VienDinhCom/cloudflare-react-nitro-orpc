@@ -41,7 +41,10 @@ function App() {
 
           <p className="mx-auto mb-10 max-w-2xl text-xl text-muted-foreground">
             A modern{" "}
-            <a href="https://github.com/VienDinhCom/esmate/tree/main/templates/react-nitro">
+            <a
+              className="hover:text-primary"
+              href="https://github.com/VienDinhCom/esmate/tree/main/templates/react-nitro"
+            >
               <strong>MERN</strong>
             </a>{" "}
             stack replacement designed for ultra-cheap, zero-ops deployment on Cloudflare—powered by{" "}
