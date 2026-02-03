@@ -69,7 +69,7 @@ comprehensive and pre-configured foundation for building modern, type-safe full-
     npx wrangler login
     ```
 
-    Then configure `wrangler.json` with the worker and database information.
+    Then configure `wrangler.json` with your worker and database information.
 
 5.  **Run the development server:**
 
