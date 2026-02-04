@@ -6,5 +6,9 @@ export default defineConfig({
     tailwindFunctions: ["cn"],
     tailwindStylesheet: "src/frontend/assets/styles/global.css",
   },
-  ignores: ["./src/backend/database/migrations/**/*", "./src/frontend/lib/tanstack/router.ts"],
+  ignores: [
+    "./src/backend/database/migrations/**/*",
+    "./src/frontend/lib/tanstack/router.ts",
+    "./src/backend/lib/types/cloudflare.d.ts",
+  ],
 });
