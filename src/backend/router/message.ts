@@ -6,6 +6,11 @@ import { createDatabase, orm, schema } from "@/backend/database";
 import { authMiddleware, os } from "@/backend/lib/orpc";
 import { MessageInsertSchema, MessageSelectSchema, MessageSelectSchemaWithSender } from "@/shared/schema";
 
+/**
+ * Event publisher for message events.
+ * Need to replace with a Durable Object in production.
+ * @see https://orpc.dev/docs/helpers/publisher
+ */
 const publisher = new EventPublisher<{
   sent: z.infer<typeof MessageSelectSchemaWithSender>;
 }>();
