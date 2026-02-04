@@ -9,7 +9,7 @@ import { MessageInsertSchema, MessageSelectSchema, MessageSelectSchemaWithSender
 /**
  * Event publisher for message events.
  * Need to replace with a Durable Object in production.
- * @see https://orpc.dev/docs/helpers/publisher
+ * @see https://github.com/VienDinhCom/cloudflare-react-nitro-orpc/pull/1
  */
 const publisher = new EventPublisher<{
   sent: z.infer<typeof MessageSelectSchemaWithSender>;
